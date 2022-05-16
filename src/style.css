@@ -21,4 +21,7 @@ body {
   color: var(--color-tertiary);
   font-weight: 300;
   background-color: var(--color-secondary);
+  padding: 0 16px;
 }
+
+
