@@ -1,5 +1,5 @@
 import './style.css';
-import MLogo from './assets/logo-dark.png';
+import MLogo from './assets/logo-light.png';
 import searchIcon from './assets/search.svg';
 
 const logo = document.getElementById('logo');

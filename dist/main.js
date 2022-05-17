@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n  padding: 0 16px;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 32px;\r\n  height: 32px;\r\n  position: relative;\r\n  top: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border: 1px solid var(--color-primary);\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n  padding: 0 16px;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 48px;\r\n  height: 48px;\r\n  position: relative;\r\n  top: 3px;\r\n  background: linear-gradient(to right, var(--color-primary) 0%, #66d59f, rgba(102, 213, 159, 0.82));\r\n  border-radius: 50%;\r\n  padding: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\nspan {\r\n  color: var(--color-primary);\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n\r\n  .header__search {\r\n    position: relative;\r\n    top: 5px;\r\n    width: 400px;\r\n  }\r\n\r\n  .header__logo img {\r\n    width: 48px;\r\n    height: 48px;\r\n    position: relative;\r\n    top: 6px;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -474,16 +474,17 @@ module.exports = function (cssWithMappingToString) {
 };
 
 /***/ }),
-/* 11 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "4ef76f52ffdcfe658b93.png";
-
-/***/ }),
+/* 11 */,
 /* 12 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "7117d009aa7c6c9d9f3f.svg";
+
+/***/ }),
+/* 13 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "59fcaac755bbe66b97da.png";
 
 /***/ })
 /******/ 	]);
@@ -591,7 +592,7 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _assets_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _assets_logo_light_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
@@ -599,7 +600,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const logo = document.getElementById('logo');
 const myLogo = new Image();
-myLogo.src = _assets_logo_dark_png__WEBPACK_IMPORTED_MODULE_1__;
+myLogo.src = _assets_logo_light_png__WEBPACK_IMPORTED_MODULE_1__;
 logo.appendChild(myLogo);
 
 const search = document.getElementById('search');
