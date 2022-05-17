@@ -108,9 +108,10 @@ footer {
 
 #movies {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 40px auto;
+  padding: 0 16px;
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 2rem 1rem;
 }
 
@@ -159,6 +160,10 @@ footer {
   column-gap: 8px;
 }
 
+.movie__likes img {
+  transition: transform 0.2s;
+}
+
 .movie div img {
   width: 19px;
   height: 19px;
@@ -172,14 +177,9 @@ footer {
   column-gap: 8px;
 }
 
-.movie__likes img {
-  transition: transform 0.2s;
-}
-
 .movie__likes img:active {
   transform: scale(1.3);
 }
-
 
 .movie__likes span {
   position: relative;
@@ -204,7 +204,6 @@ footer {
   background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));
   color: #fff;
 }
-
 
 @media screen and (min-width: 768px) {
   .header {
