@@ -19,13 +19,13 @@ body {
   color: var(--color-tertiary);
   font-weight: 300;
   background-color: var(--color-secondary);
-  padding: 0 16px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  padding: 0 16px;
 }
 
 .header__logo {
@@ -79,6 +79,32 @@ span {
   outline: none;
   border: none;
 }
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  padding: 2%;
+  gap: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-text {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+/* ----------- */
 
 @media screen and (min-width: 768px) {
   .header {
