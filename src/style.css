@@ -19,13 +19,13 @@ body {
   color: var(--color-tertiary);
   font-weight: 300;
   background-color: var(--color-secondary);
-  padding: 0 16px;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  padding: 0 16px;
 }
 
 .header__logo {
@@ -79,6 +79,32 @@ span {
   outline: none;
   border: none;
 }
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  padding: 2%;
+  gap: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-text {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+/* ----------- */
 
 #movies {
   max-width: 1200px;
@@ -183,18 +209,18 @@ span {
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1200px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .header__search {
     position: relative;
     top: 5px;
     width: 400px;
   }
-  
+
   .header__logo img {
     width: 48px;
     height: 48px;
