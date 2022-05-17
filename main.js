@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n  padding: 0 16px;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 48px;\r\n  height: 48px;\r\n  position: relative;\r\n  top: 3px;\r\n  background: linear-gradient(to right, var(--color-primary) 0%, #66d59f, rgba(102, 213, 159, 0.82));\r\n  border-radius: 50%;\r\n  padding: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\nspan {\r\n  color: var(--color-primary);\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n#movies {\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  display: grid;\r\n  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );\r\n  grid-gap: 2rem 1rem;\r\n}\r\n\r\n#movies article {\r\n  align-self: start;\r\n}\r\n\r\n.movie {\r\n  width: 100%;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  border-radius: 8px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie img {\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n.movie h3 {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  margin-top: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.movie p {\r\n  font-size: 12px;\r\n  font-weight: 300;\r\n  margin-top: 4px;\r\n}\r\n\r\n.movie div {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-top: 6px;\r\n}\r\n\r\n.movie__rating {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie div img {\r\n  width: 19px;\r\n  height: 19px;\r\n  cursor: pointer;\r\n}\r\n\r\n.movie__likes {\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: flex-end;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img {\r\n  transition: transform 0.2s;\r\n}\r\n\r\n.movie__likes img:active {\r\n  transform: scale(1.3);\r\n}\r\n\r\n\r\n.movie__likes span {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\n.movie button {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: var(--color-primary);\r\n  background-color: transparent;\r\n  border: 1px solid var(--color-primary);\r\n  border-radius: 8px;\r\n  padding: 5px 8px;\r\n  margin-top: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.movie button:hover {\r\n  border: 1px solid transparent;\r\n  background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));\r\n  color: #fff;\r\n}\r\n\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    max-width: 1200px;\r\n    margin: 0 auto 40px auto;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n  \r\n  .header__search {\r\n    position: relative;\r\n    top: 5px;\r\n    width: 400px;\r\n  }\r\n  \r\n  .header__logo img {\r\n    width: 48px;\r\n    height: 48px;\r\n    position: relative;\r\n    top: 6px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 40px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 48px;\r\n  height: 48px;\r\n  position: relative;\r\n  top: 3px;\r\n  background: linear-gradient(to right, var(--color-primary) 0%, #66d59f, rgba(102, 213, 159, 0.82));\r\n  border-radius: 50%;\r\n  padding: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\nspan {\r\n  color: var(--color-primary);\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n/* Footer Styling */\r\n\r\nfooter {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: var(--color-primary);\r\n  padding: 2%;\r\n  gap: 50px;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n.footer-text {\r\n  font-family: 'Varela Round', sans-serif;\r\n  font-size: 18px;\r\n}\r\n\r\n.footer-text a {\r\n  text-decoration: none;\r\n  color: var(--color-secondary);\r\n}\r\n\r\n/* ----------- */\r\n\r\n#movies {\r\n  max-width: 1200px;\r\n  margin: 40px auto;\r\n  padding: 0 16px;\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\r\n  grid-gap: 2rem 1rem;\r\n}\r\n\r\n#movies article {\r\n  align-self: start;\r\n}\r\n\r\n.movie {\r\n  width: 100%;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  border-radius: 8px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie img {\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n.movie h3 {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  margin-top: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.movie p {\r\n  font-size: 12px;\r\n  font-weight: 300;\r\n  margin-top: 4px;\r\n}\r\n\r\n.movie div {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-top: 6px;\r\n}\r\n\r\n.movie__rating {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img {\r\n  transition: transform 0.2s;\r\n}\r\n\r\n.movie div img {\r\n  width: 19px;\r\n  height: 19px;\r\n  cursor: pointer;\r\n}\r\n\r\n.movie__likes {\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: flex-end;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img:active {\r\n  transform: scale(1.3);\r\n}\r\n\r\n.movie__likes span {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\n.movie button {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: var(--color-primary);\r\n  background-color: transparent;\r\n  border: 1px solid var(--color-primary);\r\n  border-radius: 8px;\r\n  padding: 5px 8px;\r\n  margin-top: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.movie button:hover {\r\n  border: 1px solid transparent;\r\n  background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));\r\n  color: #fff;\r\n}\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n\r\n  .header__search {\r\n    position: relative;\r\n    top: 5px;\r\n    width: 400px;\r\n  }\r\n\r\n  .header__logo img {\r\n    width: 48px;\r\n    height: 48px;\r\n    position: relative;\r\n    top: 6px;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -474,12 +474,7 @@ module.exports = function (cssWithMappingToString) {
 };
 
 /***/ }),
-/* 11 */
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "94b7a84b62d912e4efcb.png";
-
-/***/ }),
+/* 11 */,
 /* 12 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -495,150 +490,157 @@ module.exports = __webpack_require__.p + "59fcaac755bbe66b97da.png";
 /* 14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "88902d4e9cf1da75df74.png";
+module.exports = __webpack_require__.p + "94b7a84b62d912e4efcb.png";
 
 /***/ }),
 /* 15 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "88902d4e9cf1da75df74.png";
+
+/***/ }),
+/* 16 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getMovies": () => (/* binding */ getMovies)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const getMovies = () => {
-  return [
-    {
-      name: 'The Grinch',
-      genres: ['Comedy', 'Horror'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://image.tmdb.org/t/p/w300/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg',
-      },
+const getMovies = () => [
+  {
+    name: 'The Grinch',
+    genres: ['Comedy', 'Horror'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Black Panther',
-      genres: ['Action', 'Adventure', 'Fantasy'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://image.tmdb.org/t/p/w300/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
-      },
+    image: {
+      medium: 'https://image.tmdb.org/t/p/w300/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg',
     },
-    {
-      name: 'The Old Guard',
-      genres: ['Action', 'Adventure', 'Fantasy'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://upload.wikimedia.org/wikipedia/en/0/02/The_Old_Guard_2020_film_poster.png',
-      },
+  },
+  {
+    name: 'The Black Panther',
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Spiderman',
-      genres: ['Fiction', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+    image: {
+      medium: 'https://image.tmdb.org/t/p/w300/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://m.media-amazon.com/images/M/MV5BNDFkZDI5ZGUtYTdkOC00YTFiLWJjNjMtNTQ3ZjIxMTY2ZjMyXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg',
-      },
+    description: 'After the events of Captain America: Civil War, King T\'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country\'s new leader. However, T\'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakanda\'s special forces, to prevent Wakanda from being dragged into a world war.',
+  },
+  {
+    name: 'The Old Guard',
+    genres: ['Action', 'Adventure', 'Fantasy'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://m.media-amazon.com/images/M/MV5BMDIyYzUwNjgtNDA1Mi00ZmQ3LThhNWQtN2RjZjczNjRlZmQ3XkEyXkFqcGdeQXVyNjMxNzcwOTI@._V1_.jpg',
-      },
+    image: {
+      medium: 'https://upload.wikimedia.org/wikipedia/en/0/02/The_Old_Guard_2020_film_poster.png',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+  },
+  {
+    name: 'The Spiderman',
+    genres: ['Fiction', 'Thriller'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*'
-      },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+    image: {
+      medium: 'https://m.media-amazon.com/images/M/MV5BNDFkZDI5ZGUtYTdkOC00YTFiLWJjNjMtNTQ3ZjIxMTY2ZjMyXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      },
+    image: {
+      medium: 'https://m.media-amazon.com/images/M/MV5BMDIyYzUwNjgtNDA1Mi00ZmQ3LThhNWQtN2RjZjczNjRlZmQ3XkEyXkFqcGdeQXVyNjMxNzcwOTI@._V1_.jpg',
     },
-    {
-      name: 'The Nun',
-      genres: ['Horror', 'Thriller'],
-      rating: {
-        average: '7.8',
-      },
-      image: {
-        medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-      }
-    }
-  ]
-}
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+  {
+    name: 'The Nun',
+    genres: ['Horror', 'Thriller'],
+    rating: {
+      average: '7.8',
+    },
+    image: {
+      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
+    },
+  },
+];
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMovies());
 
 
 /***/ })
@@ -747,11 +749,11 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _assets_logo_light_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
-/* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-/* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(11);
-/* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
-/* harmony import */ var _modules_movieList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15);
+/* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var _assets_light_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+/* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
+/* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(15);
+/* harmony import */ var _modules_movieList_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(16);
 
 
 
@@ -761,15 +763,19 @@ __webpack_require__.r(__webpack_exports__);
 
 const logo = document.getElementById('logo');
 const myLogo = new Image();
-myLogo.src = _assets_logo_light_png__WEBPACK_IMPORTED_MODULE_1__;
+myLogo.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
 logo.appendChild(myLogo);
 
 const search = document.getElementById('search');
-search.src = _assets_search_svg__WEBPACK_IMPORTED_MODULE_2__;
+search.src = _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__;
+
+const footer = document.getElementById('foot');
+const fIcon = new Image();
+fIcon.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
+footer.prepend(fIcon);
 
 const moviesSection = document.getElementById('movies');
-moviesSection.innerHTML = (0,_modules_movieList__WEBPACK_IMPORTED_MODULE_5__.getMovies)().map(movie => {
-  return `
+moviesSection.innerHTML = _modules_movieList_js__WEBPACK_IMPORTED_MODULE_5__["default"].map((movie) => `
     <article class="movie">
       <img src="${movie.image.medium}" alt="${movie.name}">
       <h3>${movie.name}</h3>
@@ -780,8 +786,7 @@ moviesSection.innerHTML = (0,_modules_movieList__WEBPACK_IMPORTED_MODULE_5__.get
       </div>
       <button>Comments</button>
     </article>
-  `
-}).join('');
+  `).join('');
 
 })();
 
