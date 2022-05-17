@@ -25,7 +25,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .header__logo {
@@ -80,21 +80,121 @@ span {
   border: none;
 }
 
+#movies {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+  grid-gap: 2rem 1rem;
+}
+
+#movies article {
+  align-self: start;
+}
+
+.movie {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+.movie p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.movie div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.movie__rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8px;
+}
+
+.movie div img {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.movie__likes {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  column-gap: 8px;
+}
+
+.movie__likes img {
+  transition: transform 0.2s;
+}
+
+.movie__likes img:active {
+  transform: scale(1.3);
+}
+
+
+.movie__likes span {
+  position: relative;
+  top: 1px;
+}
+
+.movie button {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 5px 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.movie button:hover {
+  border: 1px solid transparent;
+  background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));
+  color: #fff;
+}
+
+
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .header__search {
     position: relative;
     top: 5px;
     width: 400px;
   }
-
+  
   .header__logo img {
     width: 48px;
     height: 48px;
