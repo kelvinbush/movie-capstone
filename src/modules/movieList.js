@@ -1,5 +1,6 @@
 const getMovies = () => [
   {
+    id: 0,
     name: 'The Grinch',
     genres: ['Comedy', 'Horror'],
     rating: {
@@ -10,6 +11,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 1,
     name: 'The Black Panther',
     genres: ['Action', 'Adventure', 'Fantasy'],
     rating: {
@@ -21,6 +23,7 @@ const getMovies = () => [
     description: 'After the events of Captain America: Civil War, King T\'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country\'s new leader. However, T\'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakanda\'s special forces, to prevent Wakanda from being dragged into a world war.',
   },
   {
+    id: 2,
     name: 'The Old Guard',
     genres: ['Action', 'Adventure', 'Fantasy'],
     rating: {
@@ -31,6 +34,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 3,
     name: 'The Spiderman',
     genres: ['Fiction', 'Thriller'],
     rating: {
@@ -41,6 +45,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 4,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -51,6 +56,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 5,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -61,6 +67,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 6,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -71,6 +78,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 7,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -81,6 +89,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 8,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -91,6 +100,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 9,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -101,6 +111,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 10,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -111,6 +122,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 11,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
@@ -121,6 +133,7 @@ const getMovies = () => [
     },
   },
   {
+    id: 12,
     name: 'The Nun',
     genres: ['Horror', 'Thriller'],
     rating: {
