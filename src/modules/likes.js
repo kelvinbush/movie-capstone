@@ -11,7 +11,7 @@ const getLike = (id, likes) => {
     const result = likes.find((like) => +like.item_id === +id);
     return result ? result.likes : 0;
   }
-  return 0;
+  return 0; 
 };
 
 const postLike = async (movieId) => {

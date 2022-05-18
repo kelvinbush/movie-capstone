@@ -38,7 +38,7 @@ const listenForLikeClicks = () => {
 const displayMovies = async () => {
   const movies = await getMovies();
   const likes = await getLikes();
-  movieCount.innerHTML = countMovies(movies);
+  movieCount.innerHTML = movies.length;
   const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
       <article class="movie">
