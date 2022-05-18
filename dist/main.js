@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 40px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 48px;\r\n  height: 48px;\r\n  position: relative;\r\n  top: 3px;\r\n  background: linear-gradient(to right, var(--color-primary) 0%, #66d59f, rgba(102, 213, 159, 0.82));\r\n  border-radius: 50%;\r\n  padding: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\nspan {\r\n  color: var(--color-primary);\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n.hero {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0 16px;\r\n  margin: 40px 0;\r\n  text-align: center;\r\n}\r\n\r\n#movies-count {\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n/* Footer Styling */\r\n\r\nfooter {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: var(--color-primary);\r\n  padding: 2%;\r\n  gap: 50px;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n.footer-text {\r\n  font-family: 'Varela Round', sans-serif;\r\n  font-size: 18px;\r\n}\r\n\r\n.footer-text a {\r\n  text-decoration: none;\r\n  color: var(--color-secondary);\r\n}\r\n\r\n/* ----------- */\r\n\r\n#movies {\r\n  max-width: 1200px;\r\n  margin: 40px auto;\r\n  padding: 0 16px;\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\r\n  grid-gap: 2rem 1rem;\r\n}\r\n\r\n#movies article {\r\n  align-self: start;\r\n}\r\n\r\n.movie {\r\n  width: 100%;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  border-radius: 8px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie img {\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n.movie h3 {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  margin-top: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.movie p {\r\n  font-size: 12px;\r\n  font-weight: 300;\r\n  margin-top: 4px;\r\n}\r\n\r\n.movie div {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-top: 6px;\r\n}\r\n\r\n.movie__rating {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img {\r\n  transition: transform 0.2s;\r\n}\r\n\r\n.movie div img {\r\n  width: 19px;\r\n  height: 19px;\r\n  cursor: pointer;\r\n}\r\n\r\n.movie__likes {\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: flex-end;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img:active {\r\n  transform: scale(1.3);\r\n}\r\n\r\n.movie__likes span {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\n.movie button {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: var(--color-primary);\r\n  background-color: transparent;\r\n  border: 1px solid var(--color-primary);\r\n  border-radius: 8px;\r\n  padding: 5px 8px;\r\n  margin-top: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.movie button:hover {\r\n  border: 1px solid transparent;\r\n  background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));\r\n  color: #fff;\r\n}\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n\r\n  .header__search {\r\n    position: relative;\r\n    top: 5px;\r\n    width: 400px;\r\n  }\r\n\r\n  .header__logo img {\r\n    width: 48px;\r\n    height: 48px;\r\n    position: relative;\r\n    top: 6px;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --color-primary: #36aa6e;\r\n  --color-secondary: #edf2f0;\r\n  --color-tertiary: #272727;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Noto Sans', sans-serif;\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n  color: var(--color-tertiary);\r\n  font-weight: 300;\r\n  background-color: var(--color-secondary);\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 40px;\r\n  padding: 0 16px;\r\n}\r\n\r\n.header__logo {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-top: 16px;\r\n}\r\n\r\n.header__logo img {\r\n  width: 48px;\r\n  height: 48px;\r\n  position: relative;\r\n  top: 3px;\r\n  background: linear-gradient(to right, var(--color-primary) 0%, #66d59f, rgba(102, 213, 159, 0.82));\r\n  border-radius: 50%;\r\n  padding: 6px;\r\n}\r\n\r\n.header__logo h2 {\r\n  font-size: 24px;\r\n  font-weight: 600;\r\n  margin-left: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\nspan {\r\n  color: var(--color-primary);\r\n}\r\n\r\n.header__search {\r\n  display: flex;\r\n  align-items: center;\r\n  border-radius: 50px;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  column-gap: 20px;\r\n  margin-top: 16px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.header__search img {\r\n  width: 24px;\r\n  height: 24px;\r\n  cursor: pointer;\r\n}\r\n\r\n.header__search input {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: #000;\r\n  outline: none;\r\n  border: none;\r\n}\r\n\r\n.hero {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 0 16px;\r\n  margin: 40px 0;\r\n  text-align: center;\r\n}\r\n\r\n#movies-count {\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n/* Footer Styling */\r\n\r\nfooter {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: var(--color-primary);\r\n  padding: 2%;\r\n  gap: 50px;\r\n  bottom: 0;\r\n  left: 0;\r\n  right: 0;\r\n}\r\n\r\n.footer-text {\r\n  font-family: 'Varela Round', sans-serif;\r\n  font-size: 18px;\r\n}\r\n\r\n.footer-text a {\r\n  text-decoration: none;\r\n  color: var(--color-secondary);\r\n}\r\n\r\n/* ----------- */\r\n\r\n#movies {\r\n  max-width: 1200px;\r\n  margin: 40px auto;\r\n  padding: 0 16px;\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\r\n  grid-gap: 2rem 1rem;\r\n}\r\n\r\n#movies article {\r\n  align-self: start;\r\n}\r\n\r\n.movie {\r\n  width: 100%;\r\n  padding: 8px;\r\n  background-color: #fff;\r\n  border-radius: 8px;\r\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.movie img {\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 8px;\r\n}\r\n\r\n.movie h3 {\r\n  font-size: 14px;\r\n  font-weight: 600;\r\n  margin-top: 8px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.movie p {\r\n  font-size: 12px;\r\n  font-weight: 300;\r\n  margin-top: 4px;\r\n}\r\n\r\n.movie div {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  margin-top: 6px;\r\n}\r\n\r\n.movie__rating {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: flex-start;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img {\r\n  transition: transform 0.2s;\r\n}\r\n\r\n.movie div img {\r\n  width: 19px;\r\n  height: 19px;\r\n  cursor: pointer;\r\n}\r\n\r\n.movie__likes {\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: flex-end;\r\n  column-gap: 8px;\r\n}\r\n\r\n.movie__likes img:active {\r\n  transform: scale(1.3);\r\n}\r\n\r\n.movie__likes span {\r\n  position: relative;\r\n  top: 1px;\r\n}\r\n\r\n.movie button {\r\n  font-size: 14px;\r\n  font-weight: 300;\r\n  color: var(--color-primary);\r\n  background-color: transparent;\r\n  border: 1px solid var(--color-primary);\r\n  border-radius: 8px;\r\n  padding: 5px 8px;\r\n  margin-top: 8px;\r\n  cursor: pointer;\r\n  transition: all 0.2s ease-in-out;\r\n}\r\n\r\n.movie button:hover {\r\n  border: 1px solid transparent;\r\n  background-image: linear-gradient(to right, var(--color-primary), #66d59f, rgba(102, 213, 159, 0.82));\r\n  color: #fff;\r\n}\r\n\r\n/* modal code */\r\n\r\n#modal {\r\n  background: rgba(65, 212, 145, 0.8);\r\n  z-index: 6;\r\n  left: 0;\r\n  top: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  padding: 50px 16px;\r\n  overflow: auto;\r\n}\r\n\r\n.modal-container {\r\n  background-color: #e6efe9;\r\n  margin: auto;\r\n  max-width: 95%;\r\n  position: relative;\r\n  padding: 5%;\r\n  border-radius: 20px;\r\n}\r\n\r\n.modal-cross {\r\n  position: fixed;\r\n}\r\n\r\n.cross {\r\n  position: absolute;\r\n  top: 20px;\r\n  right: 20px;\r\n}\r\n\r\n.content {\r\n  font-family: 'Varela Round', sans-serif;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding: 1%;\r\n}\r\n\r\n.modal-pic {\r\n  width: 175px;\r\n  height: 250px;\r\n  padding: 3%;\r\n  background-color: #fff;\r\n  border-radius: 30px;\r\n}\r\n\r\n.description {\r\n  margin: 5%;\r\n}\r\n\r\n.description > * {\r\n  margin: 15px;\r\n}\r\n\r\n.middle-section {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: baseline;\r\n}\r\n\r\n.comment-input {\r\n  font-family: 'Varela Round', sans-serif;\r\n  display: flex;\r\n  flex-direction: row;\r\n  padding: 3% 8%;\r\n  gap: 15px;\r\n}\r\n\r\n.user-icon {\r\n  width: 20%;\r\n}\r\n\r\n.fa-solid {\r\n  color: #41d491;\r\n}\r\n\r\n.inputs {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: flex-end;\r\n  align-items: end;\r\n  width: 80%;\r\n  gap: 12px;\r\n}\r\n\r\n.inputs > input,\r\ntextarea {\r\n  width: 80%;\r\n  margin: 5px;\r\n  resize: none;\r\n}\r\n\r\n#add-comment,\r\n#add-review {\r\n  font-family: 'Varela Round', sans-serif;\r\n  font-weight: 600;\r\n  justify-content: flex-end;\r\n  align-items: flex-end;\r\n  width: 100%;\r\n  padding: 8% 0;\r\n  border-radius: 20px;\r\n  outline: none;\r\n  color: #41d491;\r\n  border: 2px solid #41d491;\r\n  caret-color: #41d491;\r\n  background-color: #fff;\r\n}\r\n\r\n#add-comment:hover,\r\n#add-review:hover {\r\n  font-family: 'Varela Round', sans-serif;\r\n  font-weight: 600;\r\n  justify-content: flex-end;\r\n  align-items: flex-end;\r\n  width: 100%;\r\n  border-radius: 20px;\r\n  outline: none;\r\n  color: #fff;\r\n  border: 2px solid #fff;\r\n  background-color: #41d491;\r\n}\r\n\r\n#name {\r\n  width: 100%;\r\n  padding: 3% 10%;\r\n  border-radius: 10px;\r\n  border: none;\r\n  outline: none;\r\n}\r\n\r\n#comment {\r\n  padding: 3% 10%;\r\n  width: 100%;\r\n  border-radius: 10px;\r\n  border: none;\r\n  outline: none;\r\n}\r\n\r\n.rating {\r\n  margin: auto;\r\n  padding: 3%;\r\n  text-align: center;\r\n  font-family: 'Varela Round', sans-serif;\r\n}\r\n\r\n.rating > * {\r\n  margin: 10px 0;\r\n}\r\n\r\n.comment-section {\r\n  display: flex;\r\n  flex-direction: column;\r\n  font-family: 'Varela Round', sans-serif;\r\n  margin: 5%;\r\n}\r\n\r\n.user-comment {\r\n  display: flex;\r\n  padding: 3% 8%;\r\n  margin: 6px;\r\n  gap: 15px;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.username {\r\n  font-weight: 700;\r\n}\r\n\r\n.comment {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.comment > p {\r\n  margin: 5px;\r\n}\r\n\r\n.none {\r\n  display: none;\r\n}\r\n\r\n/* ================= */\r\n\r\n@media screen and (min-width: 768px) {\r\n  .header {\r\n    max-width: 1200px;\r\n    margin: 0 auto;\r\n    flex-direction: row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n  }\r\n\r\n  .header__search {\r\n    position: relative;\r\n    top: 5px;\r\n    width: 400px;\r\n  }\r\n\r\n  .header__logo img {\r\n    width: 48px;\r\n    height: 48px;\r\n    position: relative;\r\n    top: 6px;\r\n  }\r\n\r\n  .cross {\r\n    position: absolute;\r\n    top: 40px;\r\n    right: 40px;\r\n    cursor: pointer;\r\n  }\r\n\r\n  .content {\r\n    font-family: 'Varela Round', sans-serif;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 1%;\r\n  }\r\n\r\n  .middle-section {\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-around;\r\n  }\r\n\r\n  .comment-input {\r\n    font-family: 'Varela Round', sans-serif;\r\n    display: flex;\r\n    flex-direction: row;\r\n    padding: 3% 8%;\r\n    gap: 70px;\r\n  }\r\n\r\n  .comment-section {\r\n    display: flex;\r\n    flex-direction: column;\r\n    font-family: 'Varela Round', sans-serif;\r\n    align-items: flex-start;\r\n  }\r\n\r\n  .none {\r\n    display: none;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -569,6 +569,82 @@ const countMovies = (movies) => movies.length;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (countMovies);
 
 
+/***/ }),
+/* 18 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createModal": () => (/* binding */ createModal),
+/* harmony export */   "popup": () => (/* binding */ popup)
+/* harmony export */ });
+const popup = document.getElementById('modal');
+
+const createModal = (movies, id) => {
+  const data = movies.find((movie) => +movie.id === +id);
+  popup.innerHTML = `
+  <div class='modal-container'>
+  <i class="fa-solid fa-xmark cross"></i>
+    <div class="content">
+        <img class="modal-pic" src="${data.image.medium}" alt="${data.name}">
+        <div class="description">
+            <h3>${data.name}</</h3>
+            <p class="genre">${data.genres.join(', ')}</p>
+            <p class="release-date">February 8, 2015</p>
+        </div>
+    </div>
+    <div class="middle-section">
+        <div class="comment-input">
+            <i class="fa-solid fa-circle-user user-icon fa-2x"></i>
+            <form class="inputs">
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                <textarea id="comment" name="comment" rows="2" cols="15"></textarea>
+                <input id = "add-comment" type="submit" value="Add Comment">
+            </form>
+        </div>
+        <div class="rating">
+            <h3>Rate This Show</h3>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <input id = "add-review" type="submit" value="Add your rating">
+        </div>
+    </div>
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <div class="user-comment">
+            <i class="fa-solid fa-circle-user fa-2x"></i>
+            <div class="comment">
+                <p class="username">Username</p>
+                <p>I love this show</p>
+            </div>
+        </div>
+        <div class="user-comment">
+            <i class="fa-solid fa-circle-user fa-2x"></i>
+            <div class="comment">
+                <p class="username">Username</p>
+                <p>I love this show</p>
+            </div>
+        </div>
+        <div class="user-comment">
+            <i class="fa-solid fa-circle-user fa-2x"></i>
+            <div class="comment">
+                <p class="username">Username</p>
+                <p>I love this show</p>
+            </div>
+        </div>
+    </div>
+  </div>
+    `;
+};
+
+
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -682,6 +758,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(14);
 /* harmony import */ var _modules_likes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16);
 /* harmony import */ var _modules_count_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(17);
+/* harmony import */ var _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(18);
+
 
 
 
@@ -718,12 +796,12 @@ const listenForLikeClicks = () => {
     });
   });
 };
+const moviesSection = document.getElementById('movies');
 
 const displayMovies = async () => {
   const movies = await (0,_modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
   const likes = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLikes)();
   movieCount.innerHTML = (0,_modules_count_js__WEBPACK_IMPORTED_MODULE_7__["default"])(movies);
-  const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
       <article class="movie">
         <img src="${movie.image.medium}" alt="${movie.name}">
@@ -736,9 +814,21 @@ const displayMovies = async () => {
             <span>${(0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLike)(movie.id, likes)}</span>
           </p>
         </div>
-        <button>Comments</button>
+         <button type="button" class="movie-btn" data-id="${movie.id}">Comments</button>
       </article>
   `).join('');
+  moviesSection.addEventListener('click', (e) => {
+    if (e.target.classList.contains('movie-btn')) {
+      (0,_modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.createModal)(movies, e.target.dataset.id);
+      _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.popup.removeAttribute('class');
+      _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.popup.classList.add('modal-cross');
+      const cross = document.querySelector('.cross');
+      cross.addEventListener('click', () => {
+        _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.popup.removeAttribute('class');
+        _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.popup.classList.add('none');
+      });
+    }
+  });
   listenForLikeClicks();
 };
 

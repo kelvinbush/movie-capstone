@@ -6,6 +6,7 @@ import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
 import { getLike, getLikes, postLike } from './modules/likes.js';
 import countMovies from './modules/count.js';
+import { createModal, popup } from './modules/modal.js';
 
 const movieCount = document.getElementById('movies-count');
 
@@ -34,12 +35,12 @@ const listenForLikeClicks = () => {
     });
   });
 };
+const moviesSection = document.getElementById('movies');
 
 const displayMovies = async () => {
   const movies = await getMovies();
   const likes = await getLikes();
   movieCount.innerHTML = countMovies(movies);
-  const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
       <article class="movie">
         <img src="${movie.image.medium}" alt="${movie.name}">
@@ -52,9 +53,21 @@ const displayMovies = async () => {
             <span>${getLike(movie.id, likes)}</span>
           </p>
         </div>
-        <button>Comments</button>
+         <button type="button" class="movie-btn" data-id="${movie.id}">Comments</button>
       </article>
   `).join('');
+  moviesSection.addEventListener('click', (e) => {
+    if (e.target.classList.contains('movie-btn')) {
+      createModal(movies, e.target.dataset.id);
+      popup.removeAttribute('class');
+      popup.classList.add('modal-cross');
+      const cross = document.querySelector('.cross');
+      cross.addEventListener('click', () => {
+        popup.removeAttribute('class');
+        popup.classList.add('none');
+      });
+    }
+  });
   listenForLikeClicks();
 };
 
