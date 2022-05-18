@@ -13,3 +13,5 @@ const getLike = (id, likes) => {
     return 0;
   }
 };
+
+export { getLikes, getLike };
