@@ -521,7 +521,8 @@ const getMovies = async () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getLike": () => (/* binding */ getLike),
-/* harmony export */   "getLikes": () => (/* binding */ getLikes)
+/* harmony export */   "getLikes": () => (/* binding */ getLikes),
+/* harmony export */   "postLike": () => (/* binding */ postLike)
 /* harmony export */ });
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/mvKaShmT3vCA4Q2ipkvC';
 
@@ -537,6 +538,19 @@ const getLike = (id, likes) => {
     return result ? result.likes : 0;
   }
   return 0;
+};
+
+const postLike = async (movieId) => {
+  const response = await fetch(`${baseUrl}/likes`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      item_id: movieId,
+    }),
+  });
+  return response;
 };
 
 
@@ -675,6 +689,19 @@ const fIcon = new Image();
 fIcon.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
 footer.prepend(fIcon);
 
+const listenForLikeClicks = () => {
+  const likeBtn = document.querySelectorAll('.like-btn');
+  likeBtn.forEach((btn) => {
+    btn.addEventListener('click', async (e) => {
+      const { id } = e.target.dataset;
+      const response = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.postLike)(id);
+      if (response.status === 201) {
+        e.target.nextElementSibling.innerHTML = Number(e.target.nextElementSibling.innerHTML) + 1;
+      }
+    });
+  });
+};
+
 const displayMovies = async () => {
   const movies = await (0,_modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
   const likes = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLikes)();
@@ -694,6 +721,7 @@ const displayMovies = async () => {
         <button>Comments</button>
       </article>
   `).join('');
+  listenForLikeClicks();
 };
 
 displayMovies();
