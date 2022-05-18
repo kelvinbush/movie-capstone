@@ -1,7 +1,10 @@
+import getComments from './comment.js';
+
 const popup = document.getElementById('modal');
 
-const createModal = (movies, id) => {
+const createModal = async (movies, id) => {
   const data = movies.find((movie) => +movie.id === +id);
+  const comments = await getComments(data.id);
   popup.innerHTML = `
   <div class='modal-container'>
   <i class="fa-solid fa-xmark cross"></i>
@@ -36,27 +39,14 @@ const createModal = (movies, id) => {
     </div>
     <div class="comment-section">
         <h3>Comments</h3>
-        <div class="user-comment">
-            <i class="fa-solid fa-circle-user fa-2x"></i>
-            <div class="comment">
-                <p class="username">Username</p>
-                <p>I love this show</p>
-            </div>
-        </div>
-        <div class="user-comment">
-            <i class="fa-solid fa-circle-user fa-2x"></i>
-            <div class="comment">
-                <p class="username">Username</p>
-                <p>I love this show</p>
-            </div>
-        </div>
-        <div class="user-comment">
-            <i class="fa-solid fa-circle-user fa-2x"></i>
-            <div class="comment">
-                <p class="username">Username</p>
-                <p>I love this show</p>
-            </div>
-        </div>
+        ${comments.map((com) => `<div class="user-comment">
+              <i class="fa-solid fa-circle-user fa-2x"></i>
+              <div class="comment">
+                  <p class="username">${com.username}</p>
+                  <p>${com.comment}</p>
+              </div>
+          </div>`).join('')}
+  
     </div>
   </div>
     `;

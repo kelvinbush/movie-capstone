@@ -56,9 +56,9 @@ const displayMovies = async () => {
          <button type="button" class="movie-btn" data-id="${movie.id}">Comments</button>
       </article>
   `).join('');
-  moviesSection.addEventListener('click', (e) => {
+  moviesSection.addEventListener('click', async (e) => {
     if (e.target.classList.contains('movie-btn')) {
-      createModal(movies, e.target.dataset.id);
+      await createModal(movies, e.target.dataset.id);
       popup.removeAttribute('class');
       popup.classList.add('modal-cross');
       const cross = document.querySelector('.cross');
