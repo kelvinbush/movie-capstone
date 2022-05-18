@@ -4,9 +4,9 @@ import footerIcon from './assets/light.png';
 import getMovies from './modules/movieList.js';
 import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
-import {getLike, getLikes, postLike} from './modules/likes.js';
+import { getLike, getLikes, postLike } from './modules/likes.js';
 import countMovies from './modules/count.js';
-import {createModal, popup} from "./modules/modal.js";
+import { createModal, popup } from './modules/modal.js';
 
 const movieCount = document.getElementById('movies-count');
 
@@ -27,7 +27,7 @@ const listenForLikeClicks = () => {
   const likeBtn = document.querySelectorAll('.like-btn');
   likeBtn.forEach((btn) => {
     btn.addEventListener('click', async (e) => {
-      const {id} = e.target.dataset;
+      const { id } = e.target.dataset;
       const response = await postLike(id);
       if (response.status === 201) {
         e.target.nextElementSibling.innerHTML = Number(e.target.nextElementSibling.innerHTML) + 1;
@@ -57,7 +57,6 @@ const displayMovies = async () => {
       </article>
   `).join('');
   moviesSection.addEventListener('click', (e) => {
-    console.log(e.target);
     if (e.target.classList.contains('movie-btn')) {
       createModal(movies, e.target.dataset.id);
       popup.removeAttribute('class');

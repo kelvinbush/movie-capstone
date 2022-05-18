@@ -1,7 +1,7 @@
 const popup = document.getElementById('modal');
 
 const createModal = (movies, id) => {
-  const data = movies.find(movie => +movie.id === +id);
+  const data = movies.find((movie) => +movie.id === +id);
   popup.innerHTML = `
   <div class='modal-container'>
   <i class="fa-solid fa-xmark cross"></i>
@@ -62,4 +62,4 @@ const createModal = (movies, id) => {
     `;
 };
 
-export {createModal, popup};
+export { createModal, popup };
