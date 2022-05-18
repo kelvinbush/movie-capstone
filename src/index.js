@@ -6,7 +6,8 @@ import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
 import { getLike, getLikes, postLike } from './modules/likes.js';
 import countMovies from './modules/count.js';
-import { createModal, popup } from './modules/modal.js';
+import { createModal, popup, displayComments } from './modules/modal.js';
+import { postComment } from './modules/comment.js';
 
 const movieCount = document.getElementById('movies-count');
 
@@ -22,6 +23,21 @@ const footer = document.getElementById('foot');
 const fIcon = new Image();
 fIcon.src = footerIcon;
 footer.prepend(fIcon);
+
+const addComment = async () => {
+  const form = document.getElementById('post-comment');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const record = {
+      item_id: event.target.dataset.id,
+      username: formData.get('username'),
+      comment: formData.get('comment'),
+    };
+    await postComment(record);
+    await displayComments();
+  });
+};
 
 const listenForLikeClicks = () => {
   const likeBtn = document.querySelectorAll('.like-btn');
@@ -59,6 +75,8 @@ const displayMovies = async () => {
   moviesSection.addEventListener('click', async (e) => {
     if (e.target.classList.contains('movie-btn')) {
       await createModal(movies, e.target.dataset.id);
+      await displayComments();
+      await addComment();
       popup.removeAttribute('class');
       popup.classList.add('modal-cross');
       const cross = document.querySelector('.cross');

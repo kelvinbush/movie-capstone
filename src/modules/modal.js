@@ -1,10 +1,9 @@
-import getComments from './comment.js';
+import { getComments } from './comment.js';
 
 const popup = document.getElementById('modal');
 
 const createModal = async (movies, id) => {
   const data = movies.find((movie) => +movie.id === +id);
-  const comments = await getComments(data.id);
   popup.innerHTML = `
   <div class='modal-container'>
   <i class="fa-solid fa-xmark cross"></i>
@@ -19,8 +18,8 @@ const createModal = async (movies, id) => {
     <div class="middle-section">
         <div class="comment-input">
             <i class="fa-solid fa-circle-user user-icon fa-2x"></i>
-            <form class="inputs">
-                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+            <form class="inputs" id="post-comment" data-id=${data.id}>
+                <input type="text" id="username" name="username" required minlength="4" maxlength="8" size="10">
                 <textarea id="comment" name="comment" rows="2" cols="15"></textarea>
                 <input id = "add-comment" type="submit" value="Add Comment">
             </form>
@@ -37,19 +36,26 @@ const createModal = async (movies, id) => {
             <input id = "add-review" type="submit" value="Add your rating">
         </div>
     </div>
-    <div class="comment-section">
-        <h3>Comments</h3>
-        ${comments.map((com) => `<div class="user-comment">
-              <i class="fa-solid fa-circle-user fa-2x"></i>
-              <div class="comment">
-                  <p class="username">${com.username}</p>
-                  <p>${com.comment}</p>
-              </div>
-          </div>`).join('')}
-  
+    <div class="comment-section" data-id=${data.id}>
     </div>
   </div>
     `;
 };
 
-export { createModal, popup };
+const displayComments = async () => {
+  const commentSection = document.querySelector('.comment-section');
+  const comments = await getComments(commentSection.dataset.id);
+  commentSection.innerHTML = '';
+  commentSection.innerHTML += `
+      <h3>Comments</h3>
+          ${comments.map((com) => `<div class="user-comment">
+                <i class="fa-solid fa-circle-user fa-2x"></i>
+                <div class="comment">
+                    <p class="username">${com.username}</p>
+                    <p>${com.comment}</p>
+                </div>
+            </div>`).join('')}
+      `;
+};
+
+export { createModal, popup, displayComments };

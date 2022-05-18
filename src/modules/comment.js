@@ -3,7 +3,18 @@ const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstone
 const getComments = async (id) => {
   const response = await fetch(`${baseUrl}/comments?item_id=${id}`);
   const data = await response.json();
-  return data;
+  return data.length > 0 ? data : [];
 };
 
-export default getComments;
+const postComment = async (record) => {
+  const response = await fetch(`${baseUrl}/comments`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(record),
+  });
+  return response;
+};
+
+export { getComments, postComment };
