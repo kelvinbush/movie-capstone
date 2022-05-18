@@ -80,6 +80,22 @@ span {
   border: none;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+#movies-count {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
 /* Footer Styling */
 
 footer {
@@ -205,6 +221,193 @@ footer {
   color: #fff;
 }
 
+/* modal code */
+
+#modal {
+  background: rgba(65, 212, 145, 0.8);
+  z-index: 6;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 50px 16px;
+  overflow: auto;
+}
+
+.modal-container {
+  background-color: #e6efe9;
+  margin: auto;
+  max-width: 95%;
+  position: relative;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.modal-cross {
+  position: fixed;
+}
+
+.cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.content {
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.modal-pic {
+  width: 175px;
+  height: 250px;
+  padding: 3%;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.description {
+  margin: 5%;
+}
+
+.description > * {
+  margin: 15px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.comment-input {
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: row;
+  padding: 3% 8%;
+  gap: 15px;
+}
+
+.user-icon {
+  width: 20%;
+}
+
+.fa-solid {
+  color: #41d491;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  width: 80%;
+  gap: 12px;
+}
+
+.inputs > input,
+textarea {
+  width: 80%;
+  margin: 5px;
+  resize: none;
+}
+
+#add-comment,
+#add-review {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 600;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 8% 0;
+  border-radius: 20px;
+  outline: none;
+  color: #41d491;
+  border: 2px solid #41d491;
+  caret-color: #41d491;
+  background-color: #fff;
+}
+
+#add-comment:hover,
+#add-review:hover {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 600;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #41d491;
+}
+
+#name {
+  width: 100%;
+  padding: 3% 10%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#comment {
+  padding: 3% 10%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.rating {
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.rating > * {
+  margin: 10px 0;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+  margin: 5%;
+}
+
+.user-comment {
+  display: flex;
+  padding: 3% 8%;
+  margin: 6px;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment > p {
+  margin: 5px;
+}
+
+.none {
+  display: none;
+}
+
+/* ================= */
+
 @media screen and (min-width: 768px) {
   .header {
     max-width: 1200px;
@@ -225,5 +428,46 @@ footer {
     height: 48px;
     position: relative;
     top: 6px;
+  }
+
+  .cross {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  .content {
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+  }
+
+  .middle-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .comment-input {
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 3% 8%;
+    gap: 70px;
+  }
+
+  .comment-section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Varela Round', sans-serif;
+    align-items: flex-start;
+  }
+
+  .none {
+    display: none;
   }
 }
