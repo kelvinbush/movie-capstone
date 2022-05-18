@@ -1,4 +1,5 @@
 import { getComments } from './comment.js';
+import countComments from './count-comments.js';
 
 const popup = document.getElementById('modal');
 
@@ -47,7 +48,7 @@ const displayComments = async () => {
   const comments = await getComments(commentSection.dataset.id);
   commentSection.innerHTML = '';
   commentSection.innerHTML += `
-      <h3>Comments</h3>
+      <h3>Comments ${countComments(comments)}</h3>
           ${comments.map((com) => `<div class="user-comment">
                 <i class="fa-solid fa-circle-user fa-2x"></i>
                 <div class="comment">
