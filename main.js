@@ -581,7 +581,7 @@ __webpack_require__.r(__webpack_exports__);
 const popup = document.getElementById('modal');
 
 const createModal = (movies, id) => {
-  const data = movies.find(movie => +movie.id === +id);
+  const data = movies.find((movie) => +movie.id === +id);
   popup.innerHTML = `
   <div class='modal-container'>
   <i class="fa-solid fa-xmark cross"></i>
@@ -788,7 +788,7 @@ const listenForLikeClicks = () => {
   const likeBtn = document.querySelectorAll('.like-btn');
   likeBtn.forEach((btn) => {
     btn.addEventListener('click', async (e) => {
-      const {id} = e.target.dataset;
+      const { id } = e.target.dataset;
       const response = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.postLike)(id);
       if (response.status === 201) {
         e.target.nextElementSibling.innerHTML = Number(e.target.nextElementSibling.innerHTML) + 1;
@@ -818,7 +818,6 @@ const displayMovies = async () => {
       </article>
   `).join('');
   moviesSection.addEventListener('click', (e) => {
-    console.log(e.target);
     if (e.target.classList.contains('movie-btn')) {
       (0,_modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.createModal)(movies, e.target.dataset.id);
       _modules_modal_js__WEBPACK_IMPORTED_MODULE_8__.popup.removeAttribute('class');
