@@ -229,13 +229,13 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .header__search {
     position: relative;
     top: 5px;
     width: 400px;
   }
-  
+
   .header__logo img {
     width: 48px;
     height: 48px;

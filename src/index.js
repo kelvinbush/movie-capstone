@@ -6,7 +6,6 @@ import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
 import { getLike, getLikes, postLike } from './modules/likes.js';
 
-
 const movieCount = document.getElementById('movies-count');
 
 const logo = document.getElementById('logo');
