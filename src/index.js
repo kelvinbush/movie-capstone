@@ -72,6 +72,7 @@ const displayMovies = async () => {
          <button type="button" class="movie-btn" data-id="${movie.id}">Comments</button>
       </article>
   `).join('');
+  
   moviesSection.addEventListener('click', async (e) => {
     if (e.target.classList.contains('movie-btn')) {
       await createModal(movies, e.target.dataset.id);
