@@ -6,6 +6,9 @@ import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
 import { getLike, getLikes, postLike } from './modules/likes.js';
 
+
+const movieCount = document.getElementById('movies-count');
+
 const logo = document.getElementById('logo');
 const myLogo = new Image();
 myLogo.src = footerIcon;
@@ -35,6 +38,7 @@ const listenForLikeClicks = () => {
 const displayMovies = async () => {
   const movies = await getMovies();
   const likes = await getLikes();
+  movieCount.innerHTML = movies.length;
   const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
       <article class="movie">
