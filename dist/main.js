@@ -537,7 +537,7 @@ const getLike = (id, likes) => {
     const result = likes.find((like) => +like.item_id === +id);
     return result ? result.likes : 0;
   }
-  return 0;
+  return 0; 
 };
 
 const postLike = async (movieId) => {
@@ -551,6 +551,21 @@ const postLike = async (movieId) => {
     }),
   });
   return response;
+};
+
+
+
+
+/***/ }),
+/* 17 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "countMovies": () => (/* binding */ countMovies)
+/* harmony export */ });
+const countMovies = (movies) => {
+  return movies.length;
 };
 
 
@@ -668,6 +683,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13);
 /* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(14);
 /* harmony import */ var _modules_likes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16);
+/* harmony import */ var _modules_count__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(17);
+
 
 
 
@@ -707,7 +724,7 @@ const listenForLikeClicks = () => {
 const displayMovies = async () => {
   const movies = await (0,_modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
   const likes = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLikes)();
-  movieCount.innerHTML = movies.length;
+  movieCount.innerHTML = (0,_modules_count__WEBPACK_IMPORTED_MODULE_7__.countMovies)(movies);
   const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
       <article class="movie">
