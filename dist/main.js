@@ -474,29 +474,45 @@ module.exports = function (cssWithMappingToString) {
 };
 
 /***/ }),
-/* 11 */,
-/* 12 */
+/* 11 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "da4c4d504d3f55317ab1.svg";
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "59fcaac755bbe66b97da.png";
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "94b7a84b62d912e4efcb.png";
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "88902d4e9cf1da75df74.png";
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const getMovies = async () => {
+  const response = await fetch('https://api.tvmaze.com/shows');
+  const data = await response.json();
+  return data.slice(0, 30);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMovies);
+
 
 /***/ }),
 /* 16 */
@@ -504,143 +520,26 @@ module.exports = __webpack_require__.p + "88902d4e9cf1da75df74.png";
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "getLike": () => (/* binding */ getLike),
+/* harmony export */   "getLikes": () => (/* binding */ getLikes)
 /* harmony export */ });
-const getMovies = () => [
-  {
-    name: 'The Grinch',
-    genres: ['Comedy', 'Horror'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://image.tmdb.org/t/p/w300/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg',
-    },
-  },
-  {
-    name: 'The Black Panther',
-    genres: ['Action', 'Adventure', 'Fantasy'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://image.tmdb.org/t/p/w300/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
-    },
-    description: 'After the events of Captain America: Civil War, King T\'Challa returns home to the reclusive, technologically advanced African nation of Wakanda to serve as his country\'s new leader. However, T\'Challa soon finds that he is challenged for the throne from factions within his own country. When two foes conspire to destroy Wakanda, the hero known as Black Panther must team up with C.I.A. agent Everett K. Ross and members of the Dora Milaje, Wakanda\'s special forces, to prevent Wakanda from being dragged into a world war.',
-  },
-  {
-    name: 'The Old Guard',
-    genres: ['Action', 'Adventure', 'Fantasy'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://upload.wikimedia.org/wikipedia/en/0/02/The_Old_Guard_2020_film_poster.png',
-    },
-  },
-  {
-    name: 'The Spiderman',
-    genres: ['Fiction', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://m.media-amazon.com/images/M/MV5BNDFkZDI5ZGUtYTdkOC00YTFiLWJjNjMtNTQ3ZjIxMTY2ZjMyXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://m.media-amazon.com/images/M/MV5BMDIyYzUwNjgtNDA1Mi00ZmQ3LThhNWQtN2RjZjczNjRlZmQ3XkEyXkFqcGdeQXVyNjMxNzcwOTI@._V1_.jpg',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-  {
-    name: 'The Nun',
-    genres: ['Horror', 'Thriller'],
-    rating: {
-      average: '7.8',
-    },
-    image: {
-      medium: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spiderman-1642713480.jpeg?crop=1xw:1xh;center,top&resize=480:*',
-    },
-  },
-];
+const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/mvKaShmT3vCA4Q2ipkvC';
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMovies());
+const getLikes = async () => {
+  const response = await fetch(`${baseUrl}/likes`);
+  const data = await response.json();
+  return data;
+};
+
+const getLike = (id, likes) => {
+  if (likes.length > 0) {
+    const result = likes.find((like) => +like.item_id === +id);
+    return result ? result.likes : 0;
+  }
+  return 0;
+};
+
+
 
 
 /***/ })
@@ -749,11 +648,13 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-/* harmony import */ var _assets_light_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
-/* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
-/* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(15);
-/* harmony import */ var _modules_movieList_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(16);
+/* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _assets_light_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+/* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13);
+/* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(14);
+/* harmony import */ var _modules_likes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16);
+
 
 
 
@@ -774,19 +675,28 @@ const fIcon = new Image();
 fIcon.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
 footer.prepend(fIcon);
 
-const moviesSection = document.getElementById('movies');
-moviesSection.innerHTML = _modules_movieList_js__WEBPACK_IMPORTED_MODULE_5__["default"].map((movie) => `
-    <article class="movie">
-      <img src="${movie.image.medium}" alt="${movie.name}">
-      <h3>${movie.name}</h3>
-      <p class="movie__genre">${movie.genres.join(', ')}</p>
-      <div>
-        <p class="movie__rating"><span><img src="${_assets_rate_png__WEBPACK_IMPORTED_MODULE_3__}" alt=""></span>${movie.rating.average}</p>
-        <p class="movie__likes"><img src="${_assets_love_png__WEBPACK_IMPORTED_MODULE_4__}" alt=""><span>15</span></p>
-      </div>
-      <button>Comments</button>
-    </article>
+const displayMovies = async () => {
+  const movies = await (0,_modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  const likes = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLikes)();
+  const moviesSection = document.getElementById('movies');
+  moviesSection.innerHTML = movies.map((movie) => `
+      <article class="movie">
+        <img src="${movie.image.medium}" alt="${movie.name}">
+        <h3>${movie.name}</h3>
+        <p class="movie__genre">${movie.genres.join(', ')}</p>
+        <div>
+          <p class="movie__rating"><span><img src="${_assets_rate_png__WEBPACK_IMPORTED_MODULE_4__}" alt=""></span>${movie.rating.average}</p>
+          <p class="movie__likes">
+            <img src="${_assets_love_png__WEBPACK_IMPORTED_MODULE_5__}" alt="" class="like-btn" data-id=${movie.id}>
+            <span>${(0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLike)(movie.id, likes)}</span>
+          </p>
+        </div>
+        <button>Comments</button>
+      </article>
   `).join('');
+};
+
+displayMovies();
 
 })();
 
