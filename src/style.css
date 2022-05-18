@@ -80,6 +80,22 @@ span {
   border: none;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+#movies-count {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
 /* Footer Styling */
 
 footer {
