@@ -1,10 +1,10 @@
 import './style.css';
 import searchIcon from './assets/search.svg';
 import footerIcon from './assets/light.png';
-import getMovies from './modules/movieList.js';
-import rating from './assets/rate.png';
-import loveIcon from './assets/love.png';
-import { getLike, getLikes } from './modules/likes.js';
+import getMovies from "./modules/movieList.js";
+import rating from "./assets/rate.png";
+import loveIcon from "./assets/love.png";
+import {getLike, getLikes, postLike} from "./modules/likes.js";
 
 const logo = document.getElementById('logo');
 const myLogo = new Image();
@@ -18,6 +18,22 @@ const footer = document.getElementById('foot');
 const fIcon = new Image();
 fIcon.src = footerIcon;
 footer.prepend(fIcon);
+
+
+const listenForLikeClicks = () => {
+  const likeBtn = document.querySelectorAll('.like-btn');
+  likeBtn.forEach((btn) => {
+    btn.addEventListener('click', async (e) => {
+      const id = e.target.dataset.id;
+      const response = await postLike(id);
+      if (response.status === 201) {
+        console.log(e.target.nextElementSibling.innerHTML);
+        e.target.nextElementSibling.innerHTML = Number(e.target.nextElementSibling.innerHTML) + 1;
+      }
+    });
+  });
+}
+
 
 const displayMovies = async () => {
   const movies = await getMovies();
@@ -38,6 +54,7 @@ const displayMovies = async () => {
         <button>Comments</button>
       </article>
   `).join('');
+  listenForLikeClicks();
 };
 
 displayMovies();
