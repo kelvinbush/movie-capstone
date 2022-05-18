@@ -1,10 +1,10 @@
 import './style.css';
 import searchIcon from './assets/search.svg';
 import footerIcon from './assets/light.png';
-import getMovies from "./modules/movieList";
-import rating from "./assets/rate.png";
-import loveIcon from "./assets/love.png";
-import {getLike, getLikes} from "./modules/likes.js";
+import getMovies from './modules/movieList.js';
+import rating from './assets/rate.png';
+import loveIcon from './assets/love.png';
+import { getLike, getLikes } from './modules/likes.js';
 
 const logo = document.getElementById('logo');
 const myLogo = new Image();

@@ -506,14 +506,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const getMovies = async () => {
-  try {
-    const response = await fetch(`https://api.tvmaze.com/shows`);
-    const data = await response.json();
-    return data.slice(0, 30)
-  } catch (error) {
-    console.log(error);
-  }
-}
+  const response = await fetch('https://api.tvmaze.com/shows');
+  const data = await response.json();
+  return data.slice(0, 30);
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMovies);
 
@@ -531,16 +527,16 @@ const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstone
 
 const getLikes = async () => {
   const response = await fetch(`${baseUrl}/likes`);
-  return await response.json();
+  const data = await response.json();
+  return data;
 };
 
 const getLike = (id, likes) => {
   if (likes.length > 0) {
     const result = likes.find((like) => +like.item_id === +id);
     return result ? result.likes : 0;
-  } else {
-    return 0;
   }
+  return 0;
 };
 
 
@@ -654,7 +650,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _assets_light_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-/* harmony import */ var _modules_movieList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
+/* harmony import */ var _modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 /* harmony import */ var _assets_rate_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(13);
 /* harmony import */ var _assets_love_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(14);
 /* harmony import */ var _modules_likes_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(16);
@@ -680,7 +676,7 @@ fIcon.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
 footer.prepend(fIcon);
 
 const displayMovies = async () => {
-  const movies = await (0,_modules_movieList__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  const movies = await (0,_modules_movieList_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
   const likes = await (0,_modules_likes_js__WEBPACK_IMPORTED_MODULE_6__.getLikes)();
   const moviesSection = document.getElementById('movies');
   moviesSection.innerHTML = movies.map((movie) => `
