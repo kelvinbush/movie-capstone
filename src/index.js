@@ -5,7 +5,7 @@ import getMovies from './modules/movieList.js';
 import rating from './assets/rate.png';
 import loveIcon from './assets/love.png';
 import { getLike, getLikes, postLike } from './modules/likes.js';
-import countMovies from './modules/count.js';
+import countMovies from './modules/count-movies.js';
 import { createModal, popup, displayComments } from './modules/modal.js';
 import { postComment } from './modules/comment.js';
 
