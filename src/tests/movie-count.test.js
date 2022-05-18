@@ -1,4 +1,4 @@
-import countMovies from '../modules/count.js';
+import countMovies from '../modules/count-movies.js';
 
 describe('Count movies', () => {
   it('should return 5 ', () => {
