@@ -17,7 +17,9 @@ myLogo.src = footerIcon;
 logo.appendChild(myLogo);
 
 const search = document.getElementById('search');
-search.src = searchIcon;
+const searchIconImg = new Image();
+searchIconImg.src = searchIcon;
+search.prepend(searchIconImg);
 
 const footer = document.getElementById('foot');
 const fIcon = new Image();
