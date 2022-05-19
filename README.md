@@ -14,6 +14,11 @@ Testing with Jest.
 >Mobile Version
 <img src='Screenshots/Mobile.png'>
 
+## Live Demo
+
+- The project is deployed with [GitHub pages](https://kelvinbush.github.io/movie-capstone/).
+
+
 
 ## Built With
 
@@ -21,6 +26,12 @@ Testing with Jest.
 - CSS
 - JavaScript / ES6
 - Webpack
+
+
+## Prerequisites
+- browser (e.g. Google Chrome)
+- text editor (e.g. VSCode)
+- terminal/CLI
 
 
 ## Getting Started
@@ -35,23 +46,6 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm build` to build the application with webpack .
 - Run `npm run start` to start the development server.
 - Run `npm run test` to run the tests.
-
-
-
-### Prerequisites
-- browser (e.g. Google Chrome)
-- text editor (e.g. VSCode)
-- terminal/CLI
-
-### Clone the repository
-
-```
-https://github.com/kelvinbush/movie-capstone
-```
-
-### Live Demo
-
-- The project is deployed with [GitHub pages]().
 
 
 
