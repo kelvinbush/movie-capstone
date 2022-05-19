@@ -2,6 +2,15 @@
 
 # Best Movies List - Capstone Project Project
 
+In this javascript capstone project, we have build a web applications that is based on an extrenal API.
+We have built a movie list web application that displays movies from the API.
+
+## Screenshots
+> Destop Version
+<img src='Screenshots/Desktop.png'>
+
+>Mobile Vesrion
+<img src='Screenshots/Mobile.png'>
 
 
 ## Built With
@@ -13,6 +22,8 @@
 
 
 ## Getting Started
+
+
 
 
 ### Prerequisites
