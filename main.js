@@ -822,7 +822,9 @@ myLogo.src = _assets_light_png__WEBPACK_IMPORTED_MODULE_2__;
 logo.appendChild(myLogo);
 
 const search = document.getElementById('search');
-search.src = _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__;
+const searchIconImg = new Image();
+searchIconImg.src = _assets_search_svg__WEBPACK_IMPORTED_MODULE_1__;
+search.prepend(searchIconImg);
 
 const footer = document.getElementById('foot');
 const fIcon = new Image();
