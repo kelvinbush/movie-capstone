@@ -1,7 +1,6 @@
 {
-  "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
     "test": "jest --coverage",
@@ -10,8 +9,6 @@
     "start": "webpack serve --open"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
@@ -35,5 +32,17 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "name": "movie-capstone",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelvinbush/movie-capstone.git"
+  },
+  "author": "NabilHY, kelvinbush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelvinbush/movie-capstone/issues"
+  },
+  "homepage": "https://github.com/kelvinbush/movie-capstone#readme"
 }
