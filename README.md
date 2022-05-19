@@ -18,6 +18,10 @@ Testing with Jest.
 
 - The project is deployed with [GitHub pages](https://kelvinbush.github.io/movie-capstone/).
 
+## Video Presentation
+
+[Click Here](https://youtu.be/Ks9WneJ3DYI)
+
 
 
 ## Built With
