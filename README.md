@@ -78,6 +78,10 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
+
+- [TvMazeAPI](https://api.tvmaze.com/) - for displaying the movies
+- [Involvement API](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270). - for displaying the likes and comments
 
 ## 📝 License
 
